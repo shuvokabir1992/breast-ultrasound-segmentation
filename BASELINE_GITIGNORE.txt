@@ -1,0 +1,10 @@
+# Add these lines to the existing .gitignore before committing this project.
+.venv/
+__pycache__/
+*.py[cod]
+data/raw/
+*.zip
+runs/
+checkpoints/
+*.pt
+*.pth

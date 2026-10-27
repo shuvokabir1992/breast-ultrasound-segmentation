@@ -1,0 +1,7 @@
+# Keep the existing CUDA-enabled PyTorch installation.
+# PyTorch 2.14.1+cu126 / MONAI 1.6.1 were reported on aries.
+monai==1.6.1
+numpy>=1.24,<3
+pillow>=9.1
+scipy
+matplotlib

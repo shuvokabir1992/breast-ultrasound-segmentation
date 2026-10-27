@@ -1,0 +1,45 @@
+data/*
+!data/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+reports/*
+!reports/.gitkeep
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+.env
+wandb/
+mlruns/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets
+data/
+datasets/
+BUS-BRA/
+BUSBRA/
+
+# Training outputs and model weights
+runs/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Downloaded archives
+*.zip
+*.tar
+*.tar.gz
+
+# Local credentials
+.env
+.env.*
+!.env.example
