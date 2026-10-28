@@ -1,5 +1,7 @@
 # BUS-BRA lesion segmentation baseline
 
+> **Historical setup guide.** This document describes the original baseline package. See the [current README](README.md) and [completed results](BASELINE_RESULTS.md) for the current project.
+
 A full-image, binary segmentation baseline built around the BUS-BRA metadata supplied on 27 October 2026. The first model is a 2D MONAI residual U-Net. This package extends the existing breast-ultrasound-segmentation project.
 
 ## What the metadata check found
