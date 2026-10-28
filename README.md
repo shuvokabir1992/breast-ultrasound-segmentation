@@ -2,6 +2,23 @@
 
 **Purpose:** A reproducible breast-ultrasound *lesion segmentation* research portfolio project. Research use only; not a diagnostic medical device.
 
+## Baseline results
+
+A MONAI residual U-Net was evaluated using three training seeds per
+resolution on one fixed Case-disjoint BUS-BRA holdout.
+
+The validation-selected 384-pixel setting achieved test Case Dice
+**0.8792 ± 0.0021**. The 256-pixel reference achieved
+**0.8842 ± 0.0024**. Values are mean ± sample standard deviation
+across three training seeds.
+
+This experiment is not completed 10-fold cross-validation.
+The test cohort was reused; external validation remains pending.
+
+![Baseline results](figures/baseline_final_results.png)
+
+[Read the full methods, results and limitations](BASELINE_RESULTS.md).
+
 ## First milestone: dataset verification (no GPU required)
 
 1. Download the original **BUSBRA.zip** from https://zenodo.org/records/8231412.

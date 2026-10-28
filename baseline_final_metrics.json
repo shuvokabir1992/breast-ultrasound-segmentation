@@ -1,0 +1,325 @@
+{
+  "selected_resolution": 384,
+  "reference_resolution": 256,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "scope": "One fixed Case-disjoint holdout, three training seeds per resolution; reused test cohort, not independent external validation.",
+  "source_sha256": {
+    "validation": "70563813677445c5a810603ee003d37e9126c0868f1c5d908d4251a5ecccbaf7",
+    "test": "15a6eacd08d6c04e767b5eceaf6b9f19e40527197bd22506685a52931d0d66a8"
+  },
+  "validation": {
+    "256": {
+      "dice": {
+        "mean": 0.8869119263818628,
+        "sample_std": 0.005888714645329156,
+        "n": 3
+      },
+      "iou": {
+        "mean": 0.8064106493172579,
+        "sample_std": 0.006655904657446718,
+        "n": 3
+      },
+      "sensitivity": {
+        "mean": 0.903849895703059,
+        "sample_std": 0.015648595877804188,
+        "n": 3
+      },
+      "precision": {
+        "mean": 0.8895861132143187,
+        "sample_std": 0.02104035574472015,
+        "n": 3
+      },
+      "benign_case_dice": {
+        "mean": 0.8957984995346745,
+        "sample_std": 0.007367415735086461,
+        "n": 3
+      },
+      "malignant_case_dice": {
+        "mean": 0.8678319310831792,
+        "sample_std": 0.006999807300616989,
+        "n": 3
+      },
+      "hd95_defined_case_mean_px": {
+        "mean": 26.48524150679545,
+        "sample_std": 1.2156235660142578,
+        "n": 3,
+        "note": "Each run averages its fully defined Cases; check undefined counts in per-run metrics."
+      }
+    },
+    "384": {
+      "dice": {
+        "mean": 0.8876591894970752,
+        "sample_std": 0.0030338308639608993,
+        "n": 3
+      },
+      "iou": {
+        "mean": 0.8075567120819471,
+        "sample_std": 0.0051545538793576475,
+        "n": 3
+      },
+      "sensitivity": {
+        "mean": 0.9012703818099,
+        "sample_std": 0.008479022634480762,
+        "n": 3
+      },
+      "precision": {
+        "mean": 0.8922678032444367,
+        "sample_std": 0.0025302841220157303,
+        "n": 3
+      },
+      "benign_case_dice": {
+        "mean": 0.9024855435683027,
+        "sample_std": 0.004006394685647548,
+        "n": 3
+      },
+      "malignant_case_dice": {
+        "mean": 0.8558261351676753,
+        "sample_std": 0.0010502829930473163,
+        "n": 3
+      },
+      "hd95_defined_case_mean_px": {
+        "mean": 26.500258616791832,
+        "sample_std": 1.3913944035886958,
+        "n": 3,
+        "note": "Each run averages its fully defined Cases; check undefined counts in per-run metrics."
+      }
+    }
+  },
+  "test": {
+    "256": {
+      "dice": {
+        "mean": 0.8842398376868839,
+        "sample_std": 0.002355668985790025,
+        "n": 3
+      },
+      "iou": {
+        "mean": 0.8108450816520617,
+        "sample_std": 0.003801068735972942,
+        "n": 3
+      },
+      "sensitivity": {
+        "mean": 0.9018794272248839,
+        "sample_std": 0.01628350660596146,
+        "n": 3
+      },
+      "precision": {
+        "mean": 0.8861295797724417,
+        "sample_std": 0.01724565803583972,
+        "n": 3
+      },
+      "benign_case_dice": {
+        "mean": 0.9009622444774414,
+        "sample_std": 0.004001661213059561,
+        "n": 3
+      },
+      "malignant_case_dice": {
+        "mean": 0.848827682130409,
+        "sample_std": 0.001826126171578927,
+        "n": 3
+      },
+      "hd95_defined_case_mean_px": {
+        "mean": 22.964888792870806,
+        "sample_std": 1.2851463227552002,
+        "n": 3,
+        "note": "Check per-run undefined Case counts before comparing distances."
+      }
+    },
+    "384": {
+      "dice": {
+        "mean": 0.8791853442576734,
+        "sample_std": 0.0020982411975790896,
+        "n": 3
+      },
+      "iou": {
+        "mean": 0.8046365095810429,
+        "sample_std": 0.002804438872465919,
+        "n": 3
+      },
+      "sensitivity": {
+        "mean": 0.9025141832276503,
+        "sample_std": 0.0077460088532499555,
+        "n": 3
+      },
+      "precision": {
+        "mean": 0.8767555458203105,
+        "sample_std": 0.006442982192864823,
+        "n": 3
+      },
+      "benign_case_dice": {
+        "mean": 0.8962274645880631,
+        "sample_std": 0.00414637930425932,
+        "n": 3
+      },
+      "malignant_case_dice": {
+        "mean": 0.8430961482639069,
+        "sample_std": 0.0029398581005193637,
+        "n": 3
+      },
+      "hd95_defined_case_mean_px": {
+        "mean": 26.22090783489758,
+        "sample_std": 1.07175458990916,
+        "n": 3,
+        "note": "Check per-run undefined Case counts before comparing distances."
+      }
+    }
+  },
+  "test_counts": {
+    "images": 193,
+    "cases": 106
+  },
+  "paired_seed_test_dice_differences_384_minus_256": {
+    "42": -0.003696930391534403,
+    "43": -0.004034647526874102,
+    "44": -0.007431902369222976
+  },
+  "exploratory_paired_case_bootstrap": {
+    "metric": "Mean over the three fixed seed pairs of per-Case Dice differences (384 minus 256)",
+    "mean_difference": -0.005054493429210489,
+    "95ci": [
+      -0.014412960644161539,
+      0.004190881289627755
+    ],
+    "resamples": 2000,
+    "bootstrap_seed": 42,
+    "limitation": "Case-sampling uncertainty conditional on the six fixed checkpoints. Does not include training-seed variability or selection effects."
+  },
+  "runs": [
+    {
+      "image_size": 256,
+      "seed": 42,
+      "checkpoint_epoch": 28,
+      "checkpoint_sha256": "4754f8bbc1ae4ed57fffbab4256612b1c6642461fc05fea5fb2e54e15fe360f8",
+      "test_case_macro": {
+        "dice": 0.8815200732950111,
+        "iou": 0.8068859394806936,
+        "sensitivity": 0.9044182172590539,
+        "precision": 0.8766879179020135
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 22.308565030176283,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 24.036989406804693,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    },
+    {
+      "image_size": 256,
+      "seed": 43,
+      "checkpoint_epoch": 23,
+      "checkpoint_sha256": "793b98c517e273f9c796dbab50f341672c94cf615e816989ce5bd2b8eb02fb0f",
+      "test_case_macro": {
+        "dice": 0.8856362932356736,
+        "iou": 0.8111839155602055,
+        "sensitivity": 0.9167444208314248,
+        "precision": 0.8756664063961277
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 22.123042851377985,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 23.31740546486108,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    },
+    {
+      "image_size": 256,
+      "seed": 44,
+      "checkpoint_epoch": 25,
+      "checkpoint_sha256": "9b97730263c19634412b2d2b3cb1c1b3814ed93a27c3fb5e81c3254a41d2841e",
+      "test_case_macro": {
+        "dice": 0.8855631465299668,
+        "iou": 0.8144653899152858,
+        "sensitivity": 0.884475643584173,
+        "precision": 0.9060344150191837
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 20.674954266565212,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 21.54027150694665,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    },
+    {
+      "image_size": 384,
+      "seed": 42,
+      "checkpoint_epoch": 20,
+      "checkpoint_sha256": "a0d078f02c53ac201058bfbc9d0549b092dc8305d2914e9cf4d52d33410111e6",
+      "test_case_macro": {
+        "dice": 0.8778231429034767,
+        "iou": 0.8035333096224709,
+        "sensitivity": 0.9072380799115587,
+        "precision": 0.8723869035758022
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 25.23135000480547,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 25.71092135902242,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    },
+    {
+      "image_size": 384,
+      "seed": 43,
+      "checkpoint_epoch": 29,
+      "checkpoint_sha256": "ff09abace0c861f53a2b1598ac69073be0a319093c13dd820b222fde7bf9d287",
+      "test_case_macro": {
+        "dice": 0.8816016457087995,
+        "iou": 0.8078247911448122,
+        "sensitivity": 0.9067297916695215,
+        "precision": 0.8737246734425881
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 25.92804131346459,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 27.452422064319563,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    },
+    {
+      "image_size": 384,
+      "seed": 44,
+      "checkpoint_epoch": 24,
+      "checkpoint_sha256": "bd0f4d95382bb55976a82de3586be30b933f2b1844d703c6eedf78a3149359c4",
+      "test_case_macro": {
+        "dice": 0.8781312441607438,
+        "iou": 0.8025514279758458,
+        "sensitivity": 0.8935746781018709,
+        "precision": 0.884155060442541
+      },
+      "test_hd95": {
+        "units": "native image pixels; physical spacing not established",
+        "image_mean_defined_px": 24.666390243026576,
+        "image_defined_count": 193,
+        "image_undefined_count": 0,
+        "case_mean_fully_defined_px": 25.49938008135076,
+        "case_fully_defined_count": 106,
+        "case_undefined_count": 0,
+        "empty_mask_rule": "Both empty=0; exactly one empty=undefined (null)"
+      }
+    }
+  ],
+  "checks": "Matching six frozen checkpoint identities, matching Cases and metadata within cohorts, disjoint validation/test Cases, recomputed Case/subgroup metrics and seed averages; all passed."
+}

@@ -43,3 +43,13 @@ checkpoints/
 .env
 .env.*
 !.env.example
+
+# Local environments, datasets and training outputs
+/.venv/
+/data/
+/runs/
+/checkpoints/
+__pycache__/
+*.pt
+*.pth
+*.zip
