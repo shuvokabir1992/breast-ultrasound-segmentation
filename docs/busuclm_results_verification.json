@@ -1,0 +1,41 @@
+{
+  "actual_prediction_review_received": true,
+  "actual_prediction_review_verification": "docs/busuclm_prediction_review_verification.json",
+  "changes_to_existing_frozen_inference_source_files": false,
+  "checks_passed": [
+    "Full audit status and eligibility counts",
+    "Metadata, geometry policy, source implementation and six checkpoint/epoch identities",
+    "Patient IDs and image counts in every reported subgroup",
+    "Patient-macro and image-weighted means",
+    "Benign/malignant and Marks=Yes/No partition consistency",
+    "Defined HD95 availability and weighted means",
+    "Per-run bootstrap intervals and across-seed sample SD",
+    "Baseline test Dice and descriptive cross-cohort comparison"
+  ],
+  "gallery_layout_check": "Eight clearly labelled synthetic examples rendered and visually checked; not included as research results",
+  "new_model_inference_performed": false,
+  "python_3_10_syntax": "passed",
+  "raw_full_per_image_prediction_data_received": false,
+  "real_prediction_gallery": "Actual eight-image, three-seed gallery received and visually inspected; original bytes included in figures/",
+  "real_result_figure": "Generated only from the uploaded six-model summaries and visually checked",
+  "received_source_files": [
+    "audit(1).json",
+    "summary(2).json",
+    "summary(1).json",
+    "INFO.csv",
+    "review_summary(3).json",
+    "predictions_review.png"
+  ],
+  "reporting_packages": {
+    "Pillow": "12.3.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "reporting_python": "3.12.14",
+  "saved_mask_review_main_io_smoke": "Passed using synthetic pairs with source/identity gates mocked; actual native score recomputation and output writes exercised",
+  "saved_mask_review_unit_checks_passed": 4,
+  "scope": "Export consistency audit, CPU saved-mask review software checks, and actual selected gallery review; not independent full native-pixel rescoring",
+  "selected_native_prediction_pixel_intersections_recomputed_locally": false,
+  "selected_saved_predictions_checked_for_scalar_consistency": 24
+}

@@ -53,3 +53,53 @@ __pycache__/
 *.pt
 *.pth
 *.zip
+
+# Project publication excludes
+# Merge these rules into the existing .gitignore.
+
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Raw data, generated manifests, training and large evaluation artifacts
+/data/
+/runs/
+/reports/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.log
+
+# Downloaded datasets and delivery archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Local environment settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Documentation installation copies; README.md is the published entry point
+/README_GITHUB.md
+/.gitignore.github

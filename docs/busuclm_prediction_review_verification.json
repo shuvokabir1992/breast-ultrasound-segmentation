@@ -1,0 +1,104 @@
+{
+  "checks_passed": [
+    "Review protocol hash and primary size/seeds match the earlier completed external summary",
+    "All selected image labels, patient prefixes and raw flags match supplied INFO.csv",
+    "Selected positive-patient positions match low, second-low, middle and high rankings from the earlier full summary",
+    "Dimensions, foreground fractions, empty flags and count-derived overlap scores are internally consistent for 24 saved predictions",
+    "Normal-reference overlap and distance metrics remain undefined and separate from positive Dice",
+    "Native source image dimensions and reference pixel counts match the separately available CHCO_000 and HESN_000 source pairs",
+    "Actual eight-image gallery inspected visually"
+  ],
+  "limits": [
+    "Composite overlays do not provide the original native binary prediction arrays",
+    "Integer-count arithmetic does not independently establish spatial intersections or boundary distances",
+    "The four positive examples show no obvious common geometric shift; this is not proof of alignment for the full dataset",
+    "Deterministically chosen illustrations are not a random sample or a prevalence estimate",
+    "Worst-view and normal-image selection positions cannot be independently reconstructed without full per-image exports",
+    "Displayed annotation agreement does not establish clinical annotation validity",
+    "No settings are selected from external examples; resolution 384 remains primary"
+  ],
+  "models_changed": false,
+  "native_hd95_recomputed_locally": false,
+  "native_prediction_pixels_recomputed_locally": false,
+  "native_selected_mask_rescoring_reported_by_aries_script": true,
+  "new_inference_performed": false,
+  "partial_native_source_checks": [
+    {
+      "id": "CHCO_000",
+      "native_image_dimensions": [
+        856,
+        606
+      ],
+      "verified_source_reference_pixels": 11388
+    },
+    {
+      "id": "HESN_000",
+      "native_image_dimensions": [
+        620,
+        489
+      ],
+      "verified_source_reference_pixels": 0
+    }
+  ],
+  "primary_resolution": 384,
+  "protocol_sha256": "f0903d6f8ac581ce395a1980791dfe6866d3734d1834e12923b650f025bafde5",
+  "review_date": "2026-10-28",
+  "scope": "Uploaded actual composite gallery and selected-score JSON; no native prediction masks uploaded",
+  "score_arithmetic_checked_saved_predictions": 24,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selected_images": 8,
+  "selected_patients": 8,
+  "selected_saved_predictions": 24,
+  "source_artifacts": [
+    {
+      "included_as": "docs/busuclm_external_prediction_review.json",
+      "sha256": "1878026e10f830586d98c7a57fd685b27a9f65cddbd644709641c3ac077a5782",
+      "size_bytes": 19883,
+      "uploaded_name": "review_summary(3).json"
+    },
+    {
+      "included_as": "figures/busuclm_external_predictions_review.png",
+      "sha256": "0d2109abd255ab71e0904d0ed6c3bb94da7ce5cf407bc5059d2494a7c0c60e05",
+      "size_bytes": 2542093,
+      "uploaded_name": "predictions_review.png"
+    }
+  ],
+  "visual_findings": [
+    {
+      "id": "NIRO_000",
+      "observation": "Large false-positive regions compared with a small reference; seed 43 has zero reference overlap"
+    },
+    {
+      "id": "CHCO_000",
+      "observation": "Partial lesion overlap accompanied by substantial predictions along original side borders"
+    },
+    {
+      "id": "CHSP_006",
+      "observation": "Missed upper reference region and separate superior predicted regions"
+    },
+    {
+      "id": "RARE_002",
+      "observation": "Close reference overlap for seeds 43/44; seed 42 includes distant components"
+    },
+    {
+      "id": "PLBA_006",
+      "observation": "Large interior foreground predictions on an empty normal reference for all three seeds"
+    },
+    {
+      "id": "POFR_002",
+      "observation": "Interior foreground predictions on an empty normal reference"
+    },
+    {
+      "id": "OSCU_024",
+      "observation": "Smaller nonzero foreground regions on an empty normal reference"
+    },
+    {
+      "id": "HESN_000",
+      "observation": "Nonzero predictions on the correctly represented empty native-grid reference"
+    }
+  ]
+}

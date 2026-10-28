@@ -156,14 +156,16 @@ not train, change checkpoints or run inference. Source SHA256 values and the
 frozen checkpoint identities are recorded in `baseline_final_metrics.json`.
 Server-specific absolute paths are omitted from that derived report.
 
-## Next milestone
+## Completed external follow-up
 
-Keep these checkpoints and settings frozen. The next research step is external
-validation with a separately acquired dataset before further optimization.
-BUS-UCLM version 3 is a candidate source:
-[official dataset record](https://data.mendeley.com/datasets/7fvgj4jsp7/3) and
-[authors' tools](https://github.com/noeliavallez/BUS-UCLM-Dataset).
-Audit its actual files and metadata before implementing a loader. It has RGB
-lesion masks and normal images, so it requires an explicit mask-conversion and
-empty-target evaluation protocol rather than reusing the BUS-BRA assumptions.
-No BUS-UCLM results are claimed in this report.
+These six checkpoints and settings were subsequently evaluated on BUS-UCLM V3
+under a separate frozen protocol. The primary setting remained 384 pixels.
+The eligibility-restricted external evaluation and selected prediction review
+are complete; see [the external results](BUSUCLM_EXTERNAL_RESULTS.md).
+
+The primary patient-macro external Dice is 0.5782 +/- 0.0065 across the three
+training seeds, and normal-image foreground burden is reported separately.
+The external cohort has different source, annotation and grouping conventions.
+The source-test and external means are descriptive cohort comparisons, not
+paired estimates of a specific domain-shift cause. This source report's test
+and validation results remain unchanged.

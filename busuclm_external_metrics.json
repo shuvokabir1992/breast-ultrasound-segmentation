@@ -1,0 +1,829 @@
+{
+  "by_resolution": {
+    "256": {
+      "baseline_test_dice": {
+        "mean": 0.8842398376868839,
+        "n": 3,
+        "sample_std": 0.002355668985790025
+      },
+      "external": {
+        "benign_dice": {
+          "mean": 0.5139747622588686,
+          "n": 3,
+          "sample_std": 0.004661799122370087
+        },
+        "dice": {
+          "mean": 0.6053882285425803,
+          "n": 3,
+          "sample_std": 0.007880616431072972
+        },
+        "hd95_native_px": {
+          "mean": 222.7989057631612,
+          "n": 3,
+          "sample_std": 11.159721307316666
+        },
+        "iou": {
+          "mean": 0.49316960061785237,
+          "n": 3,
+          "sample_std": 0.010462520823322467
+        },
+        "malignant_dice": {
+          "mean": 0.6329337347466522,
+          "n": 3,
+          "sample_std": 0.006961240255218747
+        },
+        "normal_any_foreground_image_rate": {
+          "mean": 1,
+          "n": 3,
+          "sample_std": 0.0
+        },
+        "normal_foreground_fraction": {
+          "mean": 0.13570825653736637,
+          "n": 3,
+          "sample_std": 0.03938335684291983
+        },
+        "pixel_precision": {
+          "mean": 0.6305080420235475,
+          "n": 3,
+          "sample_std": 0.021926356915477504
+        },
+        "pixel_recall": {
+          "mean": 0.7169440457930575,
+          "n": 3,
+          "sample_std": 0.04536621842566732
+        }
+      },
+      "external_minus_baseline_dice": -0.2788516091443035,
+      "role": "reference"
+    },
+    "384": {
+      "baseline_test_dice": {
+        "mean": 0.8791853442576734,
+        "n": 3,
+        "sample_std": 0.0020982411975790896
+      },
+      "external": {
+        "benign_dice": {
+          "mean": 0.4843060897654987,
+          "n": 3,
+          "sample_std": 0.02935043592662077
+        },
+        "dice": {
+          "mean": 0.578154125918412,
+          "n": 3,
+          "sample_std": 0.006486801814894427
+        },
+        "hd95_native_px": {
+          "mean": 264.9629527957934,
+          "n": 3,
+          "sample_std": 38.011528171213996
+        },
+        "iou": {
+          "mean": 0.46448185777538215,
+          "n": 3,
+          "sample_std": 0.005250521092754149
+        },
+        "malignant_dice": {
+          "mean": 0.6082436398293718,
+          "n": 3,
+          "sample_std": 0.01373783760711208
+        },
+        "normal_any_foreground_image_rate": {
+          "mean": 1,
+          "n": 3,
+          "sample_std": 0.0
+        },
+        "normal_foreground_fraction": {
+          "mean": 0.15621008967995706,
+          "n": 3,
+          "sample_std": 0.01703255821067459
+        },
+        "pixel_precision": {
+          "mean": 0.5934202997481561,
+          "n": 3,
+          "sample_std": 0.01717601238389897
+        },
+        "pixel_recall": {
+          "mean": 0.7223213992659279,
+          "n": 3,
+          "sample_std": 0.026842624525005587
+        }
+      },
+      "external_minus_baseline_dice": -0.3010312183392614,
+      "role": "primary"
+    }
+  },
+  "exploratory_paired_patient_comparison": {
+    "difference_384_minus_256": -0.027234102624168404,
+    "paired_patient_bootstrap_95ci": [
+      -0.03936324359515992,
+      -0.015286610266275234
+    ],
+    "patients": 35,
+    "patients_higher_at_384": 9,
+    "patients_lower_at_384": 26,
+    "resamples": 2000,
+    "scope": "Exploratory patient resampling after averaging Dice across three fixed seed pairs; excludes training-seed and model-selection uncertainty",
+    "seed": 42
+  },
+  "input_sha256": {
+    "audit": "64da8b89aa832fc92498d6206f31a68a77db5a5d39ce336e2b7d3ddc764f108a",
+    "baseline_test_summary": "15a6eacd08d6c04e767b5eceaf6b9f19e40527197bd22506685a52931d0d66a8",
+    "external_summary": "01429799f9ff4a6f309a46b5b0ba64da64e04a8d04e4f703bade58e96032af63",
+    "metadata": "a9d5356f0639caa1bafa5d46de58c70e81894c39ddb4feff10a7858d87d9e91c"
+  },
+  "per_seed": [
+    {
+      "dice": 0.6144285237295998,
+      "image_size": 256,
+      "iou": 0.5040523680182046,
+      "normal_foreground_fraction": 0.1372895089652878,
+      "pixel_precision": 0.6233419668955331,
+      "pixel_recall": 0.7476848437675713,
+      "role": "reference",
+      "seed": 42
+    },
+    {
+      "dice": 0.6017674765974711,
+      "image_size": 256,
+      "iou": 0.4922711644477308,
+      "normal_foreground_fraction": 0.174277172073611,
+      "pixel_precision": 0.6130613232164112,
+      "pixel_recall": 0.7383070958565356,
+      "role": "reference",
+      "seed": 43
+    },
+    {
+      "dice": 0.59996868530067,
+      "image_size": 256,
+      "iou": 0.4831852693876217,
+      "normal_foreground_fraction": 0.09555808857320036,
+      "pixel_precision": 0.6551208359586981,
+      "pixel_recall": 0.6648401977550654,
+      "role": "reference",
+      "seed": 44
+    },
+    {
+      "dice": 0.5854473369484424,
+      "image_size": 384,
+      "iou": 0.4695905729063179,
+      "normal_foreground_fraction": 0.13886888475962164,
+      "pixel_precision": 0.6131235033002351,
+      "pixel_recall": 0.6993879433459077,
+      "role": "primary",
+      "seed": 42
+    },
+    {
+      "dice": 0.5730292097326313,
+      "image_size": 384,
+      "iou": 0.4591001792113951,
+      "normal_foreground_fraction": 0.17291623805395162,
+      "pixel_precision": 0.5816057336956062,
+      "pixel_recall": 0.7157307480954053,
+      "role": "primary",
+      "seed": 43
+    },
+    {
+      "dice": 0.5759858310741621,
+      "image_size": 384,
+      "iou": 0.4647548212084334,
+      "normal_foreground_fraction": 0.1568451462262979,
+      "pixel_precision": 0.585531662248627,
+      "pixel_recall": 0.7518455063564707,
+      "role": "primary",
+      "seed": 44
+    }
+  ],
+  "primary_normal_patient_ranking": [
+    {
+      "mean_foreground_fraction": 0.21738468489706114,
+      "patient_id": "CAWI"
+    },
+    {
+      "mean_foreground_fraction": 0.21309576440510095,
+      "patient_id": "CHCO"
+    },
+    {
+      "mean_foreground_fraction": 0.20051673683723514,
+      "patient_id": "CHVI"
+    },
+    {
+      "mean_foreground_fraction": 0.19119485767092476,
+      "patient_id": "HESN"
+    },
+    {
+      "mean_foreground_fraction": 0.190612533800109,
+      "patient_id": "LOTI"
+    },
+    {
+      "mean_foreground_fraction": 0.18837694850927014,
+      "patient_id": "PLBA"
+    },
+    {
+      "mean_foreground_fraction": 0.18649974810565167,
+      "patient_id": "COST"
+    },
+    {
+      "mean_foreground_fraction": 0.1805962795461789,
+      "patient_id": "PAGY"
+    },
+    {
+      "mean_foreground_fraction": 0.1755301114223572,
+      "patient_id": "NIRO"
+    },
+    {
+      "mean_foreground_fraction": 0.17352142423855202,
+      "patient_id": "DAPA"
+    },
+    {
+      "mean_foreground_fraction": 0.16670438161716963,
+      "patient_id": "COVA"
+    },
+    {
+      "mean_foreground_fraction": 0.16429577537192971,
+      "patient_id": "ORPE"
+    },
+    {
+      "mean_foreground_fraction": 0.16199489399874567,
+      "patient_id": "WAQU"
+    },
+    {
+      "mean_foreground_fraction": 0.15723894235217914,
+      "patient_id": "FUHI"
+    },
+    {
+      "mean_foreground_fraction": 0.15702480002673164,
+      "patient_id": "ELCO"
+    },
+    {
+      "mean_foreground_fraction": 0.15513192225045655,
+      "patient_id": "TOCI"
+    },
+    {
+      "mean_foreground_fraction": 0.1533487168810339,
+      "patient_id": "ALWI"
+    },
+    {
+      "mean_foreground_fraction": 0.15216462066767425,
+      "patient_id": "KIFO"
+    },
+    {
+      "mean_foreground_fraction": 0.1511671319001059,
+      "patient_id": "VITR"
+    },
+    {
+      "mean_foreground_fraction": 0.14934273801211898,
+      "patient_id": "FLKA"
+    },
+    {
+      "mean_foreground_fraction": 0.14894556878918866,
+      "patient_id": "OSCU"
+    },
+    {
+      "mean_foreground_fraction": 0.1479955912557467,
+      "patient_id": "HUBL"
+    },
+    {
+      "mean_foreground_fraction": 0.1465977555699495,
+      "patient_id": "CHSP"
+    },
+    {
+      "mean_foreground_fraction": 0.14619789471158956,
+      "patient_id": "CODE"
+    },
+    {
+      "mean_foreground_fraction": 0.14189412516017957,
+      "patient_id": "POFR"
+    },
+    {
+      "mean_foreground_fraction": 0.14028958711032058,
+      "patient_id": "ASSC"
+    },
+    {
+      "mean_foreground_fraction": 0.13979317032170507,
+      "patient_id": "STSP"
+    },
+    {
+      "mean_foreground_fraction": 0.13578127394403883,
+      "patient_id": "ANAT"
+    },
+    {
+      "mean_foreground_fraction": 0.129919383098746,
+      "patient_id": "COPE"
+    },
+    {
+      "mean_foreground_fraction": 0.12983919887315834,
+      "patient_id": "ANFO"
+    },
+    {
+      "mean_foreground_fraction": 0.12937353168728088,
+      "patient_id": "FLBA"
+    },
+    {
+      "mean_foreground_fraction": 0.12926210845383604,
+      "patient_id": "MENE"
+    },
+    {
+      "mean_foreground_fraction": 0.11077255923189114,
+      "patient_id": "SHST"
+    },
+    {
+      "mean_foreground_fraction": 0.10967142924053569,
+      "patient_id": "SECH"
+    },
+    {
+      "mean_foreground_fraction": 0.09527694883974379,
+      "patient_id": "UNCU"
+    }
+  ],
+  "primary_positive_patient_ranking": [
+    {
+      "mean_dice": 0.014074966595616103,
+      "patient_id": "NIRO"
+    },
+    {
+      "mean_dice": 0.13972092655592128,
+      "patient_id": "CHCO"
+    },
+    {
+      "mean_dice": 0.14995554652034426,
+      "patient_id": "COST"
+    },
+    {
+      "mean_dice": 0.30480807955193023,
+      "patient_id": "SIBA"
+    },
+    {
+      "mean_dice": 0.30574810687099574,
+      "patient_id": "TOCI"
+    },
+    {
+      "mean_dice": 0.34546069375405947,
+      "patient_id": "MENE"
+    },
+    {
+      "mean_dice": 0.40251738420330063,
+      "patient_id": "ASSC"
+    },
+    {
+      "mean_dice": 0.43569033553841563,
+      "patient_id": "DAPA"
+    },
+    {
+      "mean_dice": 0.4795330911051249,
+      "patient_id": "STSP"
+    },
+    {
+      "mean_dice": 0.49367240772158427,
+      "patient_id": "VITR"
+    },
+    {
+      "mean_dice": 0.5041714716365507,
+      "patient_id": "CHVI"
+    },
+    {
+      "mean_dice": 0.5476505979082998,
+      "patient_id": "CAWI"
+    },
+    {
+      "mean_dice": 0.5478730288190783,
+      "patient_id": "FLBA"
+    },
+    {
+      "mean_dice": 0.5566641974711987,
+      "patient_id": "HUBL"
+    },
+    {
+      "mean_dice": 0.5926351921163132,
+      "patient_id": "FUHI"
+    },
+    {
+      "mean_dice": 0.6015016864638675,
+      "patient_id": "ELCO"
+    },
+    {
+      "mean_dice": 0.611203881242718,
+      "patient_id": "COVA"
+    },
+    {
+      "mean_dice": 0.6380810460426495,
+      "patient_id": "CHSP"
+    },
+    {
+      "mean_dice": 0.6421302415211081,
+      "patient_id": "PLBA"
+    },
+    {
+      "mean_dice": 0.6421486080574081,
+      "patient_id": "KIFO"
+    },
+    {
+      "mean_dice": 0.6484008275040444,
+      "patient_id": "SHST"
+    },
+    {
+      "mean_dice": 0.6541276869909918,
+      "patient_id": "ORPE"
+    },
+    {
+      "mean_dice": 0.668261659643207,
+      "patient_id": "POFR"
+    },
+    {
+      "mean_dice": 0.672467801453471,
+      "patient_id": "CODE"
+    },
+    {
+      "mean_dice": 0.704473293584126,
+      "patient_id": "ALWI"
+    },
+    {
+      "mean_dice": 0.7070305685932022,
+      "patient_id": "LOTI"
+    },
+    {
+      "mean_dice": 0.7151631614592008,
+      "patient_id": "PAGY"
+    },
+    {
+      "mean_dice": 0.721514480179296,
+      "patient_id": "COPE"
+    },
+    {
+      "mean_dice": 0.7216283022901155,
+      "patient_id": "UNCU"
+    },
+    {
+      "mean_dice": 0.7501892728613229,
+      "patient_id": "SECH"
+    },
+    {
+      "mean_dice": 0.8138023634454539,
+      "patient_id": "CRCI"
+    },
+    {
+      "mean_dice": 0.8553979270025712,
+      "patient_id": "OSCU"
+    },
+    {
+      "mean_dice": 0.8689501079076533,
+      "patient_id": "FLKA"
+    },
+    {
+      "mean_dice": 0.8740263939759341,
+      "patient_id": "ANFO"
+    },
+    {
+      "mean_dice": 0.9047190705573427,
+      "patient_id": "RARE"
+    }
+  ],
+  "primary_resolution": 384,
+  "protocol": {
+    "batch_size": 16,
+    "bootstrap": "2000 patient resamples, RNG seed 42, conditional on each fixed checkpoint; seed SD reported separately",
+    "checkpoints": [
+      {
+        "checkpoint_sha256": "4754f8bbc1ae4ed57fffbab4256612b1c6642461fc05fea5fb2e54e15fe360f8",
+        "epoch": 28,
+        "image_size": 256,
+        "seed": 42
+      },
+      {
+        "checkpoint_sha256": "793b98c517e273f9c796dbab50f341672c94cf615e816989ce5bd2b8eb02fb0f",
+        "epoch": 23,
+        "image_size": 256,
+        "seed": 43
+      },
+      {
+        "checkpoint_sha256": "9b97730263c19634412b2d2b3cb1c1b3814ed93a27c3fb5e81c3254a41d2841e",
+        "epoch": 25,
+        "image_size": 256,
+        "seed": 44
+      },
+      {
+        "checkpoint_sha256": "a0d078f02c53ac201058bfbc9d0549b092dc8305d2914e9cf4d52d33410111e6",
+        "epoch": 20,
+        "image_size": 384,
+        "seed": 42
+      },
+      {
+        "checkpoint_sha256": "ff09abace0c861f53a2b1598ac69073be0a319093c13dd820b222fde7bf9d287",
+        "epoch": 29,
+        "image_size": 384,
+        "seed": 43
+      },
+      {
+        "checkpoint_sha256": "bd0f4d95382bb55976a82de3586be30b933f2b1844d703c6eedf78a3149359c4",
+        "epoch": 24,
+        "image_size": 384,
+        "seed": 44
+      }
+    ],
+    "dataset": "BUS-UCLM",
+    "dataset_doi": "10.17632/7fvgj4jsp7.3",
+    "doppler_Y_rule": "Preserve Y as unresolved; include in all-images primary cohort, exclude from No/No B-mode cohort",
+    "eligible_images": 679,
+    "empty_reference_native_grid_ids": [
+      "HESN_000",
+      "HESN_001",
+      "HESN_006",
+      "HESN_007",
+      "HESN_008",
+      "HESN_009",
+      "HESN_010",
+      "HESN_011",
+      "HESN_012"
+    ],
+    "external_manifest_sha256": "153f81e86056f9c3a03c9fc06a4e848021f805e21c2e108df8ca653fee3fcd36",
+    "external_use": "All six models evaluated without training, fine-tuning, threshold fitting, checkpoint/seed selection or postprocessing selection on BUS-UCLM",
+    "geometry_policy_sha256": "9f2c49893891c803db8a57607b124bd83653e01b00c5f9270d6eb72d988969e1",
+    "hd95": "Max of directional 95th-percentile Euclidean boundary distances with four-neighbour boundaries, in native pixels. Empty lesion prediction: overlap=0, HD95=null; retain undefined image and patient counts.",
+    "implementation_sha256": {
+      "breastseg/busuclm_external.py": "980163bd7a542ad86a9c393d11150f5b4adb5bfe89a500c6e59dac3b54d34341",
+      "breastseg/busuclm_geometry_policy.json": "9f2c49893891c803db8a57607b124bd83653e01b00c5f9270d6eb72d988969e1",
+      "breastseg/metrics.py": "aff2fe47ad4ee2fce7e48bd24a483aeffffdd94ebc475f09ee4afcb1cec82e5c",
+      "breastseg/preprocess.py": "934dcb2d5aa3b43f8fa7243ea48a81eb54539c09ebdf954fb84f8aaadeb4b0d7",
+      "breastseg/torch_pipeline.py": "6861722b3b64dcaf9b0117298937089418abb61d1dbcec74c9bdb961d190da06",
+      "scripts/audit_busuclm_external.py": "25157fef23229a91e9410f35ef83d2f5b95e92edd2621d58cc202d9d4278c634",
+      "scripts/evaluate_busuclm_external.py": "e717fc22da58e82cb340face469abfa4a81272709a7fccf68c12954b4491c333"
+    },
+    "licence": "CC BY 4.0",
+    "mask_rule": "Exact green or red RGB pixels form a binary lesion union. Matching positive masks remain native and are never supplied to the model. Nine byte-identified all-black normal masks are represented on their native image grids without interpolation; four byte-identified nonempty mismatched references are quarantined without spatial guessing.",
+    "metadata_sha256": "a9d5356f0639caa1bafa5d46de58c70e81894c39ddb4feff10a7858d87d9e91c",
+    "normal_cohort": "All 419 normal-reference images from 35 patients; report foreground pixel fractions and any-foreground image rates separately; no normal-image Dice enters the primary average",
+    "num_workers": 0,
+    "postprocessing": "none",
+    "precision": "float32; AMP and TF32 disabled",
+    "preprocessing": "Whole original image converted to Pillow L, divided by 255; aspect-preserving bilinear resize and centered zero letterbox. No crop, view splitting, augmentation or external fitting.",
+    "primary_cohort": "All 260 eligible lesion-positive images, averaged within 35 patients and then equally across patients; HESN_002 through HESN_005 excluded for unresolved reference geometry before external predictions",
+    "primary_resolution": 384,
+    "protocol_version": 2,
+    "quarantined_records": [
+      {
+        "combined_raw": "No",
+        "csv_resolution": "856x606",
+        "doppler_raw": "No",
+        "exclusion_reason": "Nonempty source mask and image have different grids; no validated crop/scale/offset mapping is available",
+        "filename": "HESN_002.png",
+        "height": 468,
+        "id": "HESN_002",
+        "image_mode": "RGBA",
+        "image_path": "images/HESN_002.png",
+        "image_sha256": "47d863104d8e2cfd408172602a2d9f477c0bd44733a151ea6c0373d91e7ca1bb",
+        "label": "benign",
+        "marks_raw": "Yes",
+        "mask_colour_counts": {
+          "0,0,0": 511842,
+          "0,255,0": 6894
+        },
+        "mask_mode": "RGB",
+        "mask_path": "masks/HESN_002.png",
+        "mask_sha256": "ba3c0cc893933cba49438d67b6a54deb9e58dc07218d209133b5c0382fe4a371",
+        "patient_id": "HESN",
+        "reference_policy": "quarantine_unresolved_positive_geometry",
+        "source_mask_height": 606,
+        "source_mask_width": 856,
+        "source_target_pixels": 6894,
+        "target_pixels": null,
+        "width": 790
+      },
+      {
+        "combined_raw": "No",
+        "csv_resolution": "856x606",
+        "doppler_raw": "No",
+        "exclusion_reason": "Nonempty source mask and image have different grids; no validated crop/scale/offset mapping is available",
+        "filename": "HESN_003.png",
+        "height": 485,
+        "id": "HESN_003",
+        "image_mode": "RGBA",
+        "image_path": "images/HESN_003.png",
+        "image_sha256": "48644be3a3663e3d8e547482ecb0ebe5d66a546346eec63bf92985e1217d4bbe",
+        "label": "benign",
+        "marks_raw": "No",
+        "mask_colour_counts": {
+          "0,0,0": 508539,
+          "0,255,0": 10197
+        },
+        "mask_mode": "RGB",
+        "mask_path": "masks/HESN_003.png",
+        "mask_sha256": "d0d8d74effac6338871199d54e344fa31dd19a5df19762a1eb1c1e6b2854a09f",
+        "patient_id": "HESN",
+        "reference_policy": "quarantine_unresolved_positive_geometry",
+        "source_mask_height": 606,
+        "source_mask_width": 856,
+        "source_target_pixels": 10197,
+        "target_pixels": null,
+        "width": 792
+      },
+      {
+        "combined_raw": "No",
+        "csv_resolution": "856x606",
+        "doppler_raw": "No",
+        "exclusion_reason": "Nonempty source mask and image have different grids; no validated crop/scale/offset mapping is available",
+        "filename": "HESN_004.png",
+        "height": 483,
+        "id": "HESN_004",
+        "image_mode": "RGBA",
+        "image_path": "images/HESN_004.png",
+        "image_sha256": "30b5a6b08f70419adbd62d8b112e1305c96b42d17f128c7f6b9ecb5c03ddd644",
+        "label": "benign",
+        "marks_raw": "No",
+        "mask_colour_counts": {
+          "0,0,0": 510048,
+          "0,255,0": 8688
+        },
+        "mask_mode": "RGB",
+        "mask_path": "masks/HESN_004.png",
+        "mask_sha256": "52528a8dd7b2ed7ac8bccf04b3c10c8e7d7d7be74d101cfa8e845f33f53415c6",
+        "patient_id": "HESN",
+        "reference_policy": "quarantine_unresolved_positive_geometry",
+        "source_mask_height": 606,
+        "source_mask_width": 856,
+        "source_target_pixels": 8688,
+        "target_pixels": null,
+        "width": 792
+      },
+      {
+        "combined_raw": "No",
+        "csv_resolution": "856x606",
+        "doppler_raw": "Yes",
+        "exclusion_reason": "Nonempty source mask and image have different grids; no validated crop/scale/offset mapping is available",
+        "filename": "HESN_005.png",
+        "height": 486,
+        "id": "HESN_005",
+        "image_mode": "RGBA",
+        "image_path": "images/HESN_005.png",
+        "image_sha256": "0f7a0b85ca23fccf13a0ff85f4d1b8294f9e7859f13392cac4e7161208a08dda",
+        "label": "benign",
+        "marks_raw": "Yes",
+        "mask_colour_counts": {
+          "0,0,0": 509675,
+          "0,255,0": 9061
+        },
+        "mask_mode": "RGB",
+        "mask_path": "masks/HESN_005.png",
+        "mask_sha256": "a321c6af44b22e12636ac6f97e5c04e221706c8e754f418a8469041a29eb9607",
+        "patient_id": "HESN",
+        "reference_policy": "quarantine_unresolved_positive_geometry",
+        "source_mask_height": 606,
+        "source_mask_width": 856,
+        "source_target_pixels": 9061,
+        "target_pixels": null,
+        "width": 787
+      }
+    ],
+    "reference_resolution": 256,
+    "secondary_cohorts": {
+      "others": "Doppler=Yes; unresolved Doppler; Combined=Yes; Marks=Yes; Marks=No; benign and malignant image-label subgroups",
+      "plain_bmode": "Doppler=No AND Combined=No (637 eligible images; 224 lesion-positive, 413 normal)",
+      "unmarked_plain_bmode": "Doppler=No AND Combined=No AND Marks=No (519 eligible images; 115 lesion-positive, 404 normal)"
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "selection": "384 selected previously using BUS-BRA validation; no selection using BUS-UCLM",
+    "source_images": 683,
+    "subgroup_rule": "Image-level eligibility followed by equal patient weighting within that subgroup; one patient may enter both benign and malignant subgroups",
+    "threshold": 0.5,
+    "training_manifest_sha256": "e37a37ea057ff2e93728150bb36a67bcc7f47dcbb3228a78fb3bfe8f3d68820c",
+    "version": 3
+  },
+  "reference_resolution": 256,
+  "secondary": {
+    "combined_yes": {
+      "256": {
+        "dice": {
+          "mean": 0.15302745193261288,
+          "n": 3,
+          "sample_std": 0.041441528664265884
+        },
+        "positive_images": 1,
+        "positive_patients": 1
+      },
+      "384": {
+        "dice": {
+          "mean": 0.17346660524659796,
+          "n": 3,
+          "sample_std": 0.12858371055793816
+        },
+        "positive_images": 1,
+        "positive_patients": 1
+      }
+    },
+    "doppler_yes": {
+      "256": {
+        "dice": {
+          "mean": 0.7235580336435301,
+          "n": 3,
+          "sample_std": 0.020403131642280834
+        },
+        "positive_images": 34,
+        "positive_patients": 17
+      },
+      "384": {
+        "dice": {
+          "mean": 0.6821727946641712,
+          "n": 3,
+          "sample_std": 0.005682751232034673
+        },
+        "positive_images": 34,
+        "positive_patients": 17
+      }
+    },
+    "marks_no": {
+      "256": {
+        "dice": {
+          "mean": 0.5750703526336811,
+          "n": 3,
+          "sample_std": 0.010857564800259801
+        },
+        "positive_images": 118,
+        "positive_patients": 29
+      },
+      "384": {
+        "dice": {
+          "mean": 0.5331998909494954,
+          "n": 3,
+          "sample_std": 0.02413219265470373
+        },
+        "positive_images": 118,
+        "positive_patients": 29
+      }
+    },
+    "marks_yes": {
+      "256": {
+        "dice": {
+          "mean": 0.6522109783203287,
+          "n": 3,
+          "sample_std": 0.00797108303205643
+        },
+        "positive_images": 142,
+        "positive_patients": 34
+      },
+      "384": {
+        "dice": {
+          "mean": 0.6378722069964328,
+          "n": 3,
+          "sample_std": 0.009426381789164943
+        },
+        "positive_images": 142,
+        "positive_patients": 34
+      }
+    },
+    "plain_bmode": {
+      "256": {
+        "dice": {
+          "mean": 0.6012240020465435,
+          "n": 3,
+          "sample_std": 0.010125696328511081
+        },
+        "positive_images": 224,
+        "positive_patients": 35
+      },
+      "384": {
+        "dice": {
+          "mean": 0.5775419219380074,
+          "n": 3,
+          "sample_std": 0.010450495258934349
+        },
+        "positive_images": 224,
+        "positive_patients": 35
+      }
+    },
+    "unmarked_plain_bmode": {
+      "256": {
+        "dice": {
+          "mean": 0.5830354507339915,
+          "n": 3,
+          "sample_std": 0.010490909200471372
+        },
+        "positive_images": 115,
+        "positive_patients": 29
+      },
+      "384": {
+        "dice": {
+          "mean": 0.5404923843484513,
+          "n": 3,
+          "sample_std": 0.02340594931090948
+        },
+        "positive_images": 115,
+        "positive_patients": 29
+      }
+    }
+  },
+  "verification": {
+    "eligible_images": 679,
+    "export_consistency_checks": "passed",
+    "limitation": "Source identities, metadata counts, patient-level arithmetic, subgroup partitions and bootstrap exports checked; raw pixel predictions have not been independently rescored here",
+    "normal_images": 419,
+    "normal_patients": 35,
+    "positive_images": 260,
+    "positive_patients": 35,
+    "quarantined_positive_pairs": 4,
+    "raw_prediction_masks_or_full_per_image_exports_received_for_this_review": false,
+    "source_images_audited_on_aries": 683
+  }
+}

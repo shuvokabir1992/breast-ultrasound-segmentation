@@ -1,0 +1,50 @@
+{
+  "HESN_geometry_pairs": 13,
+  "HESN_native_empty_references_verified": 9,
+  "HESN_positive_pairs_quarantined": 4,
+  "complete_inventory_cli_integration_fixture": {
+    "eligible_pairs": 679,
+    "eligible_positive_images": 260,
+    "empty_native_grid_references": 9,
+    "model_inference_performed": false,
+    "normal_images": 419,
+    "normal_patients": 35,
+    "passed": true,
+    "positive_patients": 35,
+    "quarantined_pairs": 4,
+    "scope": "Synthetic complete-inventory CLI and strict manifest-loader integration check; 21 supplied source pairs plus 662 synthetic pairs. Not a real full-dataset audit.",
+    "source_pairs": 683
+  },
+  "external_cpu_tests": {
+    "includes": [
+      "Small synthetic MONAI checkpoint inference and native prediction export",
+      "Completed artifact reuse and byte checks",
+      "Equal patient weighting with mixed image pathology labels",
+      "Normal-reference metrics excluded from Dice averages",
+      "Only reviewed source hashes can use native empty references",
+      "Unknown geometry and changed reviewed bytes still fail",
+      "Known nonempty mismatched references quarantined and excluded from inference",
+      "Quarantined source files remain verified",
+      "Preserved 384-pixel model selection and all six frozen checkpoint identities"
+    ],
+    "passed": 22
+  },
+  "full_real_dataset_audit_and_actual_six_checkpoint_inference": "Must run on aries",
+  "geometry_policy_sha256": "9f2c49893891c803db8a57607b124bd83653e01b00c5f9270d6eb72d988969e1",
+  "initial_baseline_checks_previously_passed": 18,
+  "initial_format_pairs": 8,
+  "packages": {
+    "Pillow": "12.3.0",
+    "monai": "1.6.1",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "torch": "2.14.1+cpu"
+  },
+  "protocol_version": 2,
+  "python": "3.12.14",
+  "python_3_10_ast_check": true,
+  "real_research_model_inference_performed": false,
+  "real_source_pairs_inspected_locally": 21,
+  "remaining_real_source_pairs_not_locally_available": 662,
+  "verification_scope": "Software and source-reference format checks only; not a completed external model evaluation"
+}

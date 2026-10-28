@@ -1,0 +1,192 @@
+{
+  "decoded_pairs": 8,
+  "inference_performed": false,
+  "mask_rule": "Exact RGB green or red pixels form binary foreground; black is background",
+  "metadata_sha256": "a9d5356f0639caa1bafa5d46de58c70e81894c39ddb4feff10a7858d87d9e91c",
+  "native_dimensions": "856x606 for all eight supplied pairs",
+  "pairs": [
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "ALWI_000.png",
+      "height": 606,
+      "id": "ALWI_000",
+      "image_mode": "RGB",
+      "image_path": "images/ALWI_000.png",
+      "image_sha256": "9e24f0205e444a05c10703e3b679a09c4584885937e3b6ecd7c5db7338d83b06",
+      "label": "benign",
+      "marks_raw": "Yes",
+      "mask_colour_counts": {
+        "0,0,0": 493424,
+        "0,255,0": 25312
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/ALWI_000.png",
+      "mask_sha256": "27db179b178577c4c001dfa014e2563fc84fa0be6fa88504a732d208dbdc7629",
+      "patient_id": "ALWI",
+      "target_pixels": 25312,
+      "width": 856
+    },
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "ALWI_001.png",
+      "height": 606,
+      "id": "ALWI_001",
+      "image_mode": "RGB",
+      "image_path": "images/ALWI_001.png",
+      "image_sha256": "dd484999af95924d40a280933abe3b692fa75546c37d90bbafeae8ea7ddaa6b8",
+      "label": "normal",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 518736
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/ALWI_001.png",
+      "mask_sha256": "897058bb2699edd444434110879417210fd8b854c0d5fcfd7204aa95ce22d311",
+      "patient_id": "ALWI",
+      "target_pixels": 0,
+      "width": 856
+    },
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "ALWI_002.png",
+      "height": 606,
+      "id": "ALWI_002",
+      "image_mode": "RGB",
+      "image_path": "images/ALWI_002.png",
+      "image_sha256": "7b28b004ff8c8e43f4dcaa8a515441c1c324df150732831d91483294025d8634",
+      "label": "benign",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 511680,
+        "0,255,0": 7056
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/ALWI_002.png",
+      "mask_sha256": "ae49f1dcf759645ab5be774c3946710b6556c2cf8274679bc670331ab36730c1",
+      "patient_id": "ALWI",
+      "target_pixels": 7056,
+      "width": 856
+    },
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "Yes",
+      "filename": "ANFO_003.png",
+      "height": 606,
+      "id": "ANFO_003",
+      "image_mode": "RGB",
+      "image_path": "images/ANFO_003.png",
+      "image_sha256": "5342f84a076a826e187268fc59464ef34e707482da3116ae1ffa536a1d50e4f3",
+      "label": "benign",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 380955,
+        "0,255,0": 137781
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/ANFO_003.png",
+      "mask_sha256": "4a38e4c45b20b447de13f1855c8791f452d9e362dd6b828b84fdf97e34766c12",
+      "patient_id": "ANFO",
+      "target_pixels": 137781,
+      "width": 856
+    },
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "CHCO_000.png",
+      "height": 606,
+      "id": "CHCO_000",
+      "image_mode": "RGB",
+      "image_path": "images/CHCO_000.png",
+      "image_sha256": "b84ccec126f71ea5eda9c79376b4ed61c59e72ac6a172a08a96ab670d43c50ac",
+      "label": "malignant",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 507348,
+        "255,0,0": 11388
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/CHCO_000.png",
+      "mask_sha256": "1135c9e6425ebbbedd500ebf2cc72b04140f89b93c42efb731dc2347b4cbb66f",
+      "patient_id": "CHCO",
+      "target_pixels": 11388,
+      "width": 856
+    },
+    {
+      "combined_raw": "No",
+      "csv_resolution": "856x606",
+      "doppler_raw": "Y",
+      "filename": "POFR_013.png",
+      "height": 606,
+      "id": "POFR_013",
+      "image_mode": "RGB",
+      "image_path": "images/POFR_013.png",
+      "image_sha256": "0b1ec96160927e66f4bf641e5807ad695ed058f80319488748d0bf06d98044ac",
+      "label": "benign",
+      "marks_raw": "Yes",
+      "mask_colour_counts": {
+        "0,0,0": 489943,
+        "0,255,0": 28793
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/POFR_013.png",
+      "mask_sha256": "51a6476f88bc93611cd57e351391af837ad5800d5767238aa83cfebf3f63cce0",
+      "patient_id": "POFR",
+      "target_pixels": 28793,
+      "width": 856
+    },
+    {
+      "combined_raw": "Yes",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "STSP_015.png",
+      "height": 606,
+      "id": "STSP_015",
+      "image_mode": "RGB",
+      "image_path": "images/STSP_015.png",
+      "image_sha256": "90b8d4f2e16536af0ee5f910e12a8f8532c16195540f799b0cac522b3633adeb",
+      "label": "normal",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 518736
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/STSP_015.png",
+      "mask_sha256": "897058bb2699edd444434110879417210fd8b854c0d5fcfd7204aa95ce22d311",
+      "patient_id": "STSP",
+      "target_pixels": 0,
+      "width": 856
+    },
+    {
+      "combined_raw": "Yes",
+      "csv_resolution": "856x606",
+      "doppler_raw": "No",
+      "filename": "STSP_026.png",
+      "height": 606,
+      "id": "STSP_026",
+      "image_mode": "RGB",
+      "image_path": "images/STSP_026.png",
+      "image_sha256": "def51736b9b000446eb4f83867bbce9ead3094e18de19fec5c5949fc61b1f1fd",
+      "label": "benign",
+      "marks_raw": "No",
+      "mask_colour_counts": {
+        "0,0,0": 516681,
+        "0,255,0": 2055
+      },
+      "mask_mode": "RGB",
+      "mask_path": "masks/STSP_026.png",
+      "mask_sha256": "91349c3c73fa5bb6bc92950686cd7be5cd476c973e1efffcb17b4e6c9797520d",
+      "patient_id": "STSP",
+      "target_pixels": 2055,
+      "width": 856
+    }
+  ],
+  "scope": "Only the eight supplied image/mask pairs; not a completed audit of all 683 images"
+}
